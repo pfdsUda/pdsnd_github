@@ -207,7 +207,7 @@ def display_raw_data(df):
             raw = input("\nYour input is invalid. Please enter only 'yes' or 'no'\n").lower()
 
 def main():
-    """This is the main function"""
+    """This is the main function for the project"""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
