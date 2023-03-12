@@ -16,5 +16,5 @@ washington.csv
 
 ### Credits
 https://learn.udacity.com/
-Using the documentation branch.
+Using the documentation branch for the project.
 
