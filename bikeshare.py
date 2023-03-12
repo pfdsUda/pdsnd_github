@@ -207,6 +207,7 @@ def display_raw_data(df):
             raw = input("\nYour input is invalid. Please enter only 'yes' or 'no'\n").lower()
 
 def main():
+"""Added a new comment for the refactoring branch."""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
