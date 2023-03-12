@@ -1,3 +1,4 @@
+#Libraries used for the code
 import time
 import pandas as pd
 import numpy as np
@@ -15,7 +16,7 @@ DAYS_ARRAY = [ 'all', 'monday', 'tuesday', 'wednesday',
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
-
+    
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -191,6 +192,7 @@ def display_raw_data(df):
     
     total_rows = df.shape[0]
 
+#Wait until user stops by saying no
     while True:            
         if raw == 'no':
             break
@@ -207,6 +209,7 @@ def display_raw_data(df):
             raw = input("\nYour input is invalid. Please enter only 'yes' or 'no'\n").lower()
 
 def main():
+"""Added a new comment for the refactoring branch."""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
